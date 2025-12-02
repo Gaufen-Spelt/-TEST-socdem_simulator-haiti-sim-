@@ -15,6 +15,7 @@ The SPD cannot govern by itself yet. Because we do not have an electoral majorit
 - @liberals: Strengthen our bonds with the left-liberal German Democratic Party and conservative-liberal German People's Party.
 - @center: Strengthen our bonds with the Catholic Center Party.
 - @kpd: Work towards repairing relationships with the Communist Party.
+- @dnvp: Perhaps, we can somehow reach the consensus with DNVP itself.
 - @spd_alone: The SPD can stand alone for now.
 - @easy_discard
 
@@ -62,6 +63,14 @@ After the success of the coalition government with the KPD, they are much more a
 on-arrival: kpd_relation += 3*(1 - dissent); reformist_dissent += 1
 
 After the events of Blütmai, reconciling with the Communists is difficult, if not impossible. Nevertheless, we must try.
+
+@dnvp
+subtitle: -2 resources
+choose-if: resources >= 2
+unavailable-subtitle: Not enough resources.
+on-arrival: resources -= 2; dnvp_relation += 6*(1 - dissent)
+
+Negotiations with Anti SPD itself is certainly the curious decision, however we might not know what might happen from it. Alfred Hugenberg is gonna do everything in their power to disrupt these talks.
 
 @center
 subtitle: -1 resources
