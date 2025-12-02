@@ -1,0 +1,31 @@
+title: Lambach Article of DNVP
+subtitle: Lambach vs Hugenberg in the battlefield for the DNVP's fate.
+view-if: year = 1928 and month = 7
+max-visits: 1
+tags: event
+new-page: true
+
+= Lambach's Fate
+
+Following the catastrophic result of the Reichstag election for the DNVP, Lambach has written the article in which he stated: Hindenburg replaced DNVP for conservatives and every monarchist favourer, he stated that it is no longer feasible to restore the monarchy and thus he suggested transformation into the conservative party to form right wing coalition with Z.
+
+Angered by such heresy and revisionism from the DNVP's authoritarian conservatism and monarchism, Hugenberg is forcing Count Kuno Von Westarp to expel the Lambach from the party.
+
+- @expel: Lambach is expelled, as it might have been obvious.
+- @survive: Hugenberg is unable to pressure against the Lambach
+
+@expel
+unavailable-subtitle: Hugenberg is not strong enough.
+subtitle: Lambach's fate is the ditch
+choose-if: republic_support >= 60
+on-arrival: old_middle_dnvp -= 5
+
+Obviously, Lambach is expelled.
+
+@survive 
+unavailable-subtitle: Lambach is not gonna survive his wrath
+subtitle: Hugenberg is not as almighty as his ego is.
+choose-if: republic_support < 60
+on-arrival: catholics_dnvp += 3
+
+Lambach survives the expulsion.
