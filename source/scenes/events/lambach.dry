@@ -1,8 +1,8 @@
 title: Kellogg-Briand Pactrimp
 new-page: true
 subtitle: An international treaty for peace
-view-if: year = 1928 and (month = 8 or month = 9)
-max-visits: 1
+view-if: year = 1928 and month = 10
+max-visits: 2
 on-arrival: kellogg_briand_seen = 1; kellogg_briand_signed = 1 if foreign_minister_party = "DVP"
 tags: event
 #face-image: img/portraits/StresemannGustav.jpg
