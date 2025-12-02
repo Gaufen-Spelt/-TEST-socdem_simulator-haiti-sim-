@@ -8,7 +8,7 @@ new-page: true
 
 = Carlo Mierendorff
 
-Carlo Mierendorff is the founder of the neo-revisionist ideological tendency, and supports both democratic reforms and extra-parliamentary action to combat the Nazis and authoritarian parties. He is from a middle-class, academic background, and is one of our youngest leaders.
+Carlo Mierendorff is the founder of the neo-revisionist ideological tendency, and supports both democratic reforms and extra-parliamentary action to combat the Nazis and authoritarian parties. He is from a middle-class, academic background, and is one of our youngest leaders. His reactiveness to the National Socialist Populism allows for his actions to speed up next political actions.
 
 - @iron_front_buildup
 - @form_iron_front
@@ -20,7 +20,7 @@ title: Build up the Iron Front
 subtitle: Increase our propaganda measures to recruit more members into the Reichsbanner. 
 choose-if: advisor_action_timer == 0 and iron_front_formed
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if iron_front_formed == 0 : The Iron Front has not yet been formed. ?]
-on-arrival: advisor_action_timer = 6; rb_strength += 200*workers_spd/(workers_spd+workers_kpd+workers_nsdap+workers_z+workers_dnvp+workers_other);
+on-arrival: advisor_action_timer = 3; rb_strength += 250*workers_spd/(workers_spd+workers_kpd+workers_nsdap+workers_z+workers_dnvp+workers_other);
 
 We have recruited more members into the Reichsbanner.
 
@@ -29,7 +29,7 @@ We have recruited more members into the Reichsbanner.
 title: Forming the Iron Front
 choose-if: advisor_action_timer == 0 and iron_front_formed == 0 and nazi_urgency >= 2
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if iron_front_formed : The Iron Front has already been formed. ?][? if nazi_urgency < 2 : The party does not yet see the danger of the Nazis. ?]
-on-arrival: advisor_action_timer = 6; rb_strength += 50; nazi_urgency += 1
+on-arrival: advisor_action_timer = 3; rb_strength += 50; nazi_urgency += 1
 go-to: confronting_nazis.iron_front 
 
 
@@ -40,4 +40,4 @@ choose-if: advisor_action_timer == 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
 on-arrival: advisor_action_timer = 3; nazi_urgency += 2; rb_militancy += 0.02; nsdap_workers -= 6*(1-dissent); nsdap_unemployed -= 5
 
-We have begun a propaganda campaign to warn our members away from the Nazis.
+We have begun a propaganda campaign to warn our members away from the Nazis. In addition, Mierendorff's warnings allows us to speed up the process of preparations for other actions.
