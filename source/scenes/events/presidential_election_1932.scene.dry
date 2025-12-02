@@ -182,6 +182,7 @@ Q.thalmann_votes = 0;
 Q.hitler_votes += Q.nsdap_normalized;
 Q.hindenburg_votes += Q.other_normalized;
 Q.hindenburg_votes += Q.dnvp_normalized;
+Q.hitler_votes *= Q.dvfp_normalized
 
 if (Q.braun_campaign) {
     Q.braun_votes += Q.spd_normalized;
@@ -222,6 +223,7 @@ if (Q.braun_campaign) {
 }
 if (Q.hitler_support_hindenburg) {
     Q.hitler_votes -= Q.nsdap_normalized;
+    Q.hindenburg_votes += Q.dvfp_normalized
     Q.hindenburg_votes += Q.nsdap_normalized;
 }
 
@@ -278,8 +280,8 @@ go-to: round2_menu
 
 There is no majority in this round. In the second round, any candidate who wins a plurality will win overall. What should we do?
 
-[? if braun_plurality or thalmann_plurality : In order to consolidate the vote for the Right, and to prevent a socialist from becoming president, [+ nsdap_candidate +] is no longer running in the second round, and has switched his endorsement to Hindenburg. ?]
-
+[? if braun_plurality or thalmann_plurality : In order to consolidate the vote for the Right, and to prevent a socialist from becoming president, [+ nsdap_candidate +] is no longer running in the second round, and has switched his endor.sement to Hindenburg. ?]
+Q.hindenburg_votes *= Qdvfp_normalized
 
 @round2_menu
 
