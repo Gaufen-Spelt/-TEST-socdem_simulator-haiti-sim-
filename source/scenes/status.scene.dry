@@ -90,6 +90,8 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="National-Socialist German Worker's Party (Nazis)">NSDAP</span>!}: [+ nsdap_relation : relationships +]
 
+{!<span class="tooltip-text" title="Deutschvölkische Freiheitspartei / German People's Freedom Party (Volks)">DVFP</span>!}: [+ dvfp_relation : relationships+]
+
 = Internal Factions of the SPD
 
 {!<span class="tooltip-text" title="The Left is interested in radical, transformative policies and cooperation with the KPD.">Left</span>!} strength: [+ left_strength : strength +], dissent: [+ left_dissent : dissent +]
