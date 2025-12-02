@@ -176,7 +176,7 @@ DNVP: [+ dnvp_votes +]%
 
 NSDAP: [+ nsdap_votes +]%
 
-DVFP: [ + dvfp_votes +]%
+DVFP: [+ dvfp_votes +]%
 
 Others: [+ other_votes +]%
 
