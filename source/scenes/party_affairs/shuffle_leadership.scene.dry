@@ -310,7 +310,7 @@ view-if: n_advisors < 3
 - #reformist_advisor
 
 @left
-view-if: n_advisors < 3
+view-if: n_advisors < 4
 
 - #left_advisor
 
