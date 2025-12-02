@@ -2,9 +2,8 @@ title: Lambach Article
 subtitle: Truthnuke
 new-page: true
 tags: event
-view-if: year = 1928 and month >= 7
+view-if: year = 1928 and month = 7
 max-visits: 1
-= Lambach's Fate
 
 Following the catastrophic result of the Reichstag election for the DNVP, Lambach has written the article in which he stated: Hindenburg replaced DNVP for conservatives and every monarchist favourer, he stated that it is no longer feasible to restore the monarchy and thus he suggested transformation into the conservative party to form right wing coalition with Z.
 
