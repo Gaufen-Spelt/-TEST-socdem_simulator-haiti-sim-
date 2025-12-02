@@ -17,7 +17,7 @@ Angered by such heresy and revisionism from the DNVP's authoritarian conservatis
 @expel
 unavailable-subtitle: Hugenberg is not strong enough.
 subtitle: Lambach's fate is the ditch
-choose-if: republic_support >= 60
+choose-if: pro_republic < 65
 on-arrival: old_middle_dnvp -= 5
 
 Obviously, Lambach is expelled.
@@ -25,7 +25,7 @@ Obviously, Lambach is expelled.
 @survive 
 unavailable-subtitle: Lambach is not gonna survive his wrath
 subtitle: Hugenberg is not as almighty as his ego is.
-choose-if: republic_support < 60
+choose-if: pro_republic >= 65
 on-arrival: catholics_dnvp += 3
 
 Lambach survives the expulsion.
