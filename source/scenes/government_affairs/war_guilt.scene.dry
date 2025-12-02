@@ -25,6 +25,7 @@ What is the goal of this tribunal?
 - @rewrite: To revise the popular German histories and finally put to rest the "stabbed in the back" myth.
 
 @pure_history
+on-arrival: nationalism += 3*(1+dissent); dnvp_relation += 20
 
 The history is being compiled, as it always has been.
 
