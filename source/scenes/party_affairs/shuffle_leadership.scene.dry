@@ -320,12 +320,12 @@ view-if: n_advisors < 3
 - #labor_advisor
 
 @neorev
-view-if: neorevisionism > 0 and n_advisors < 3
+view-if: neorevisionism > 0 and n_advisors < 4
 
 - #neorev_advisor
 
 @nonfactional
-view-if: n_advisors < 3
+view-if: n_advisors < 4
 
 - #nonfactional_advisor
 
