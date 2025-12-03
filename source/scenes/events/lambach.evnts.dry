@@ -5,24 +5,33 @@ max-visits: 1
 tags: event
 new-page: true
 
-= Center Party Conference
+= Lambach Article Consequences
 
-Wilhelm Marx, former Center Party chancellor and presidential candidate, has chosen to resign from leadership of the Center Party. Now, the party holds a conference to replace him.
 
-The consensus candidate on the right is Ludwig Kaas, a Catholic priest who represents the party's traditionalists. On the other hand, there is Joseph Joos, a leader of the Catholic trade unions, who has been more supportive of cooperation with the SPD than most of the Center Party.
 
-- @lambach: The Center Party elects Ludwig Kaas as the party chair.
-- @westarp: Influence the Center Party to select Joseph Joos as the party chair.
-- @hugenberg: We must hold a campaign in support of Joseph Joos as party chair.
+- @lambach: Lambach
+- @westarp: Westarp
+- @hugenberg: Hugenberg
 
 @lambach
+choose-if: pro_republic > 65
+unavailable-subtitle: Lambach is unable to oppose either of Westarp and Hugenberg on their decisions
+on-arrival:
 
-boy
+Lambach sweeps away the remaining Conservatives, Monarchists and Nationalists within the party , as the Weimar's system punishes Hugenberg-a-like radicalism. Hugenberg has threatened to leave the party, being enraged by the election of "Republican". Westarp provides no comment.
 
 @westarp
 
-sus
+choose-if: pro_republic <= 65 and pro_republic >= 59
+unavailable-subtitle: Lambach and Hugenberg has decided on the consensus as neither is able to oust another, Westarp being willing to make some compromise.
+on-arrival: 
+
+Lambach and Hugenberg are unable to force party into deposing one another, forcing Westarp to intervene in, as Westarp continues another term.
 
 @hugenberg
 
-del
+choose-if: pro_republic <= 59
+unavailable-subtitle: Hugenberg does not hold enough power to oust either of Lambach or Westarp.
+on-arrival: 
+
+Hugenberg, through his powerful media and nationalist-monarchist connections, removed Lambach and forces Westarp into the resignation.
