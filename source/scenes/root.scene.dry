@@ -17,6 +17,10 @@ go-to: start_menu_2
 - @info: Information
 - @game_over.achievements
 
+@info
+
+= Information about the Modification
+Basic vanilla plus modification, oriented specifically on the right wing coalition side of the content. Have fun!
 
 @start
 on-arrival: {!
