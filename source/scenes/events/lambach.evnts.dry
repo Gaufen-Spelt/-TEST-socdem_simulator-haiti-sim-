@@ -1,6 +1,6 @@
 title: DNVP Conference following Lambach Article
 subtitle: The DNVP chooses their new leader...
-view-if: year = 1928 and month = 7 and dnvp_party_leader = "Alfred Von Hugenberg"
+view-if: year = 1928 and month = 7
 max-visits: 1
 tags: event
 new-page: true
@@ -15,7 +15,7 @@ The consensus candidate on the right is Ludwig Kaas, a Catholic priest who repre
 - @westarp: Influence the Center Party to select Joseph Joos as the party chair.
 - @hugenberg: We must hold a campaign in support of Joseph Joos as party chair.
 
-@kaas
+@lambach
 
 boy
 
