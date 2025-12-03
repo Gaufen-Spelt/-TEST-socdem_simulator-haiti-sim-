@@ -68,9 +68,9 @@ After the events of Blütmai, reconciling with the Communists is difficult, if n
 subtitle: -2 resources
 choose-if: resources >= 2
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 2; dnvp_relation += 6*(1 - dissent)
+on-arrival: resources -= 2; dnvp_relation += 6*(1 - dissent); dnvp_relation -= 2 if dnvp_party_leader = "Hugenberg"
 
-Negotiations with Anti SPD itself is certainly the curious decision, however we might not know what might happen from it. Alfred Hugenberg is gonna do everything in their power to disrupt these talks.
+Negotiations with the main reactionary powerhouse is certainly the curious decision, however we might not know what might happen from it. [? if dnvp_party_leader = "Hugenberg" : Alfred Hugenberg is gonna do everything in their power to disrupt these talks. ?]
 
 @center
 subtitle: -1 resources
