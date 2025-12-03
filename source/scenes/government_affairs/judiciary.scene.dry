@@ -25,7 +25,7 @@ The Judiciary is one of the most reactionary components of the government, along
 @corruption_reaction
 subtitle: +1 budget
 unavailable-subtitle: All our corrupt deals are done for now!
-choose-if: judicial_reforms > -1
+choose-if: judicial_reforms > 0
 on-arrival: budget += 1; democratization -= 2; workers_spd -= 2*(1-dissent) if democratization <= 1; judicial_reform -= 1; pro_republic -= 4*(1-dissent); coalition_dissent -= 1 if historical_mode; reformist_dissent += 5; center_dissent += 5; labor_dissent += 5; left_dissent += 5; neorevisionist_dissent += 10
 
 We utilize the corrupted lawyers and jurists, ousting the democratic and fair justiciary members, bringing us more budget to work with, decreasing the size of justiciary.
