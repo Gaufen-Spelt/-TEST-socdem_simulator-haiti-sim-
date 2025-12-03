@@ -9,11 +9,11 @@ new-page: true
 
 Sus
 
-- @lambach: Lambach
+- @lumbach: Lambach
 - @westarp: Westarp
 - @hugenberg: Hugenberg
 
-@lambach
+@lumbach
 choose-if: pro_republic > 65
 subtitle: Sus
 unavailable-subtitle: Lambach is unable to oppose either of Westarp and Hugenberg on their decisions
