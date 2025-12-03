@@ -209,6 +209,6 @@ Catholics: SPD: [+ catholics_spd_display +]%, Z: [+ catholics_z_display +]%, KPD
 
 Support for the Republic: [+ pro_republic_disp +]%
 
-Support for the Nationalism: [+ pro_nationalism_disp +]%
+Support for the Nationalism: [+ nationalism_disp +]%
 
-Support for the Socialism: [+ pro_socialism_disp +]%
+Support for the Socialism: [+ socialism_disp +]%
