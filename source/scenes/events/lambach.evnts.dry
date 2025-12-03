@@ -7,7 +7,7 @@ new-page: true
 
 = Lambach Article Consequences
 
-
+Sus
 
 - @lambach: Lambach
 - @westarp: Westarp
@@ -15,6 +15,7 @@ new-page: true
 
 @lambach
 choose-if: pro_republic > 65
+subtitle: Sus
 unavailable-subtitle: Lambach is unable to oppose either of Westarp and Hugenberg on their decisions
 on-arrival: dnvp_party_leader = "Lambach"
 
@@ -22,13 +23,15 @@ Lambach sweeps away the remaining Conservatives, Monarchists and Nationalists wi
 
 @westarp
 choose-if: pro_republic <= 65 and pro_republic >= 59
+subtitle: Sun
 unavailable-subtitle: Lambach and Hugenberg has decided on the consensus as neither is able to oust another, Westarp being willing to make some compromise.
 on-arrival: dnvp_party_leader = "Westarp"
 
 Lambach and Hugenberg are unable to force party into deposing one another, forcing Westarp to intervene in, as Westarp continues another term.
 
 @hugenberg
-choose-if: pro_republic <= 59
+choose-if: pro_republic < 59; spd_in_government == 1
+subtitle: Dus
 unavailable-subtitle: Hugenberg does not hold enough power to oust either of Lambach or Westarp.
 on-arrival: dnvp_party_leader = "Hugenberg"
 
