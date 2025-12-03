@@ -1,4 +1,4 @@
-titlen: Root Scene
+title: Root Scene
 new-page: true
 go-to: post_event if started = 1; start_menu if started = 0
 
@@ -7,7 +7,7 @@ new-page: true
 go-to: start_menu_2
 
 = Social Democracy: An Alternate Horizon 1.20 Patch:
-= Intolerance to the Right Coalition
+= Intolerance to the Right Coalition feat. DNVP
 
 @start_menu_2
 
