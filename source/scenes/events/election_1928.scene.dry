@@ -257,8 +257,8 @@ data = data.concat([
 ]);
 
 if (window && d3) {
-    var width = 500; 
-    var height = 550;
+    var width = 600; 
+    var height = 600;
     var screenWidth = document.getElementById('content').offsetWidth;
     if (screenWidth < width - 50) {
         width = screenWidth - 50; 
