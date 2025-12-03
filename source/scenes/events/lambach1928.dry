@@ -1,0 +1,30 @@
+title: Center Party Conference
+subtitle: The DNVP chooses their new leader...
+view-if: year = 1928 and month = 7 and dnvp_party_leader = "Hugenberg"
+max-visits: 1
+tags: event
+new-page: true
+
+= Center Party Conference
+
+# reference: Evans, Ellen L. “Adam Stegerwald and the Role of the Christian Trade Unions in the Weimar Republic.” The Catholic Historical Review 59, no. 4 (1974): 602–26.
+
+Wilhelm Marx, former Center Party chancellor and presidential candidate, has chosen to resign from leadership of the Center Party. Now, the party holds a conference to replace him.
+
+The consensus candidate on the right is Ludwig Kaas, a Catholic priest who represents the party's traditionalists. On the other hand, there is Joseph Joos, a leader of the Catholic trade unions, who has been more supportive of cooperation with the SPD than most of the Center Party.
+
+- @lambach: The Center Party elects Ludwig Kaas as the party chair.
+- @westarp: Influence the Center Party to select Joseph Joos as the party chair.
+- @hugenberg: We must hold a campaign in support of Joseph Joos as party chair.
+
+@kaas
+
+boy
+
+@westarp
+
+sus
+
+@hugenberg
+
+del
