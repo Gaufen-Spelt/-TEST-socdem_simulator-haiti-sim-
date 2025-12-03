@@ -64,7 +64,7 @@ Unfortunately, our negotiations have met with failure. The center-right parties 
 
 @improve_relations
 title: Improve relations with the parties of the coalition.
-on-arrival: z_relation += 5*(1-dissent); dvp_relation += 4*(1-dissent); left_dissent += 5; z_relation -= 2 and dvp_relation -=2 if right_wing_coalition = 1
+on-arrival: z_relation += 5*(1-dissent); dvp_relation += 4*(1-dissent); left_dissent += 5; ( z_relation -= 2; dvp_relation -= 2 ) if right_wing_coalition = 1
 
 We have increased our level of contact and discussions with the parties of the coalition, primarily the Center Party and DVP.
 
