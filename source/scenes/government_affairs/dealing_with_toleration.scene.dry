@@ -22,7 +22,8 @@ We are currently acting as external support to the government of Chancellor [+ c
 @attack
 view-if: right_wing_coalition = 1
 title: Attack the current government and call for deposing current government or possibly, DNVP!
-on-arrival: go-to: vonc if dnvp_relation <= 0; workers_dnvp -= 2; workers_dvp -= 1; workers_z -= 1; workers_other -= 2; dnvp_relation -= 5; dvp_relation -= 3; z_relation -= 2
+on-arrival: workers_dnvp -= 2; workers_dvp -= 1; workers_z -= 1; workers_other -= 2; dnvp_relation -= 5; dvp_relation -= 3; z_relation -= 2
+go-to: vonc if dnvp_relation <= 0;
 
 We initiated attack on the current right wing government!
 
