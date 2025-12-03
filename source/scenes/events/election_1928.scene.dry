@@ -253,6 +253,7 @@ data = data.concat([
         "legend": "NSDAP",
         "name": "NSDAP",
         "seats": Math.round(Q.nsdap_r*5)
+    },
 ]);
 
 if (window && d3) {
