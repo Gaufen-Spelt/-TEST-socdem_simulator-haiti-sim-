@@ -1,0 +1,13 @@
+title: 1928
+subtitle: A new yearl
+on-arrival: {!
+// see post_event.scene.dry for changes.
+Q.economic_growth -= 4;
+
+!}
+tags: event
+view-if: year = 1928 and month = 3
+priority: 2
+max-visits: 2
+
+A new year begins. The economy appears to be slackening; unemployment is increasing throughout the republic, although for the most part, people are still doing well.
