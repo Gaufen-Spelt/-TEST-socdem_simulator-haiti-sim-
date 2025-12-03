@@ -1,13 +1,11 @@
-title: Center Party Conference
+title: DNVP Conference following Lambach Article
 subtitle: The DNVP chooses their new leader...
-view-if: year = 1928 and month = 7 and dnvp_party_leader = "Hugenberg"
+view-if: year = 1928 and month = 7 and dnvp_party_leader = "Alfred Von Hugenberg"
 max-visits: 1
 tags: event
 new-page: true
 
 = Center Party Conference
-
-# reference: Evans, Ellen L. “Adam Stegerwald and the Role of the Christian Trade Unions in the Weimar Republic.” The Catholic Historical Review 59, no. 4 (1974): 602–26.
 
 Wilhelm Marx, former Center Party chancellor and presidential candidate, has chosen to resign from leadership of the Center Party. Now, the party holds a conference to replace him.
 
