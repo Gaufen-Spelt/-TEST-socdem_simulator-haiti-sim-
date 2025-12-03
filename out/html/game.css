@@ -569,6 +569,10 @@ table {
 .seat.sapd {
     fill: #C40000;
 }
+{
+.seat.dvfp {
+    fill: ##43444F;
+}
 
 .tooltip-text {
     text-decoration: underline;
