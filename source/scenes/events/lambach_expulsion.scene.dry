@@ -30,7 +30,7 @@ on-arrival: dnvp_party_leader = "Lambach"; dnvp_relation += 3
 Lambach sweeps away the remaining Conservatives, Monarchists and Nationalists within the party , as the Weimar's system punishes Hugenberg-a-like radicalism. Hugenberg has threatened to leave the party, being enraged by the election of "Republican". Westarp provides no comment.
 
 @westarp
-choose-if: pro_republic <= 65 and pro_republic >= 59
+choose-if: pro_republic <= 65 and pro_republic >= 59 and spd_in_government = 0
 subtitle: Westarp remains as the Leader
 unavailable-subtitle: Lambach and Hugenberg has decided on the consensus as neither is able to oust another, Westarp being willing to make some compromise.
 on-arrival: dnvp_party_leader = "Westarp"
@@ -38,7 +38,7 @@ on-arrival: dnvp_party_leader = "Westarp"
 Lambach and Hugenberg are unable to force party into deposing one another, forcing Westarp to intervene in, as Westarp continues another term.
 
 @hugenberg
-choose-if: pro_republic < 59 and spd_in_government = 1
+choose-if: pro_republic < 59 or spd_in_government = 1
 subtitle: Hugenberg is elected to the Leadership
 unavailable-subtitle: Hugenberg does not hold enough power to oust either of Lambach or Westarp.
 on-arrival: dnvp_party_leader = "Hugenberg"; dnvp_relation -= -20
