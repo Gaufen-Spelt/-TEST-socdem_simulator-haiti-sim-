@@ -17,12 +17,12 @@ The Judiciary is one of the most reactionary components of the government, along
 - @reform: Carry out substantial judicial reforms.
 - @reform2: Carry out substantial judicial reforms through resources.
 - @minor_reforms: Carry out minor judicial reforms.
-- @corruption
+- @corruption_reaction: Carry out corrupting deals with reactionaries.
 - @as_is: Leave the judiciary as it is.
 - @easy_discard
 - @cancel_advisor_action
 
-@corruption
+@corruption_reaction
 subtitle: +1 budget
 unavailable-subtitle: All our corrupt deals are done for now!
 choose-if: judicial_reforms > -1
