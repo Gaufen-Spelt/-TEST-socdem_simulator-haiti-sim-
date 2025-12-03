@@ -39,9 +39,9 @@ Are we sure about this? A vote of no confidence would trigger new elections, and
 - @stay_course: No, we should stay the course.
 
 @vonc
-on-arrival: dnvp_relation -= 25 if right_wing_coalition = 1; spd_in_government = 0; right_coalition = 0; spd_toleration = 0; in_grand_coalition = 0; chancellor = "Brüning"; chancellor_party = "Z"; next_election_time = time + 3 if next_election_time > time+3; next_election_month = month + 3 if next_election_time >= time+3; next_election_year = year if next_election_time >= time+3; next_election_year += 1 if next_election_month > 12; next_election_month -= 12 if next_election_month > 12; spd_toleration = 0; left_strength += 8; pro_republic -= 5; new_middle_spd -= 3; rural_spd -= 3; old_middle_spd -= 3; catholics_spd -= 3; reformist_dissent += 5; left_dissent -= 5
+on-arrival: dnvp_relation -= 12 if right_wing_coalition = 1; spd_in_government = 0; right_coalition = 0; spd_toleration = 0; in_grand_coalition = 0; chancellor = "Brüning"; chancellor_party = "Z"; next_election_time = time + 3 if next_election_time > time+3; next_election_month = month + 3 if next_election_time >= time+3; next_election_year = year if next_election_time >= time+3; next_election_year += 1 if next_election_month > 12; next_election_month -= 12 if next_election_month > 12; spd_toleration = 0; left_strength += 8; pro_republic -= 5; new_middle_spd -= 3; rural_spd -= 3; old_middle_spd -= 3; catholics_spd -= 3; reformist_dissent += 5; left_dissent -= 5
 
-We have called for a vote of no confidence, and have brought down this government. Chancellor [+ chancellor +] currently rules as acting chancellor.
+We have called for a vote of no confidence, and have brought down this government. Chancellor [+ chancellor +] currently rules as acting chancellor. [? if dnvp_relation <= 0: [+ dnvp_party_leader +] is, of course, very displeased about our decision following interactions with their party-in-government ?]
 
 New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
 
@@ -64,7 +64,7 @@ Unfortunately, our negotiations have met with failure. The center-right parties 
 
 @improve_relations
 title: Improve relations with the parties of the coalition.
-on-arrival: z_relation += 5*(1-dissent); dvp_relation += 4*(1-dissent); left_dissent += 5; ( z_relation -= 2; dvp_relation -= 2 ) if right_wing_coalition = 1
+on-arrival: z_relation += 5*(1-dissent); dvp_relation += 4*(1-dissent); left_dissent += 5; z_relation -= 2 if right_wing_coalition = 1; dvp_relation -= 2 if right_wing_coalition = 1
 
 We have increased our level of contact and discussions with the parties of the coalition, primarily the Center Party and DVP.
 
