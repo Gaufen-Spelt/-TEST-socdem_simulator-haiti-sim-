@@ -1,6 +1,6 @@
 title: DNVP Conference following Lambach Article
 subtitle: The DNVP chooses their new leader...
-view-if: year == 1928 and month == 7
+view-if: year = 1928 and month = 7
 max-visits: 1
 tags: event
 new-page: true
@@ -30,7 +30,7 @@ on-arrival: dnvp_party_leader = "Westarp"
 Lambach and Hugenberg are unable to force party into deposing one another, forcing Westarp to intervene in, as Westarp continues another term.
 
 @hugenberg
-choose-if: pro_republic < 59; spd_in_government == 1
+choose-if: pro_republic < 59 and spd_in_government == 1
 subtitle: Dus
 unavailable-subtitle: Hugenberg does not hold enough power to oust either of Lambach or Westarp.
 on-arrival: dnvp_party_leader = "Hugenberg"
