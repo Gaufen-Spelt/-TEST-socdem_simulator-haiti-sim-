@@ -43,6 +43,10 @@ Etcetera.
 
 • Adjustments on Toleration - Right Coalition interactions: Relationship increase with right coalition is heavily less fruitful and austerity block is instantly blocked by DNVP presence.
 
+1.22:
+
+• Added post Lambach DNVP election. 
+
 @start
 on-arrival: {!
 Q.started = 1;
@@ -133,8 +137,8 @@ Q.kpd_relation = 25;
 Q.ddp_relation = 60;
 Q.dvp_relation = 35;
 // DNVP and NSDAP are invariably hostile
-Q.DNVP_relation = 10;
-Q.DVFP_relation = 1
+Q.dnvp_relation = 10;
+Q.dvfp_relation = 1
 Q.NSDAP_relation = 0;
 
 Q.kpd_leader = "Thälmann";
