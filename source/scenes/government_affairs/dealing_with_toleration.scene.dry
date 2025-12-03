@@ -2,8 +2,8 @@ title: Dealing with Toleration
 new-page: true
 is-card: true
 card-image: img/portraits/BrüningHeinrich.jpg
-view-if: dealing_with_toleration_timer = 0 and spd_toleration and chancellor_party == "Z"
-on-arrival: dealing_with_toleration_timer += 6; month_actions += 1
+view-if: dealing_with_toleration_timer = 0 and spd_toleration and (chancellor_party == "Z" or right_wing_coalition = 1)
+on-arrival: dealing_with_toleration_timer += 6; month_actions += 0
 tags: govt_affairs
 #subtitle: Despite not being in government, we can still provide support.
 
@@ -16,7 +16,13 @@ We are currently acting as external support to the government of Chancellor [+ c
 - @improve_relations
 - @new_grand_coalition
 - @stay_course: Stay the course, for stability's sake.
+- @attack
 - @easy_discard
+
+@attack
+view-if: right_wing_coalition = 1
+title: Attack the current government and call for deposing current government or possibly, DNVP!
+on-arrival: workers_dnvp -= 2; workers_dvp -= 1; workers_z -= 1; dnvp_relation -= 5; dvp_relation -= 3; z_relation -= 2; spd_toleration += 0.3333; go-to: vonc if spd_toleration = 0.9 
 
 @break_toleration
 view-if: not constructive_vonc
@@ -38,7 +44,7 @@ New elections have been set for [+ next_election_month : month +] [+ next_electi
 title: Urge the coalition against austerity politics, and to increase social spending.
 choose-if: budget >= 1
 unavailable-subtitle: This can only happen with a budget surplus.
-go-to: urge_success if dvp_relation >= 30 and z_relation >= 40; urge_failure if dvp_relation < 30 or z_relation < 40
+go-to: urge_success if dvp_relation >= 30 and z_relation >= 40; urge_failure if dvp_relation < 30 or z_relation < 40 or right_wing_coalition = 1
 
 @urge_success
 on-arrival: welfare += 1; budget -= 1; workers_spd += 5*(1-dissent); unemployed_spd += 5*(1-dissent); z_relation -= 3; dvp_relation -= 3; reformist_dissent -= 5; center_dissent -= 5; labor_dissent -= 5;
@@ -73,7 +79,7 @@ achievement: constitutional_coalition
 
 Our negotiations have succeeded, and the Center Party and DVP have agreed to form a new coalition government with us!
 
-We are now part of a "constitutional coalition" government that includes all parties except the extremists of the KPD, DNVP, and NSDAP. [+ chancellor +] will remain as chancellor. Leftists in our party are skeptical of this arrangement.
+We are now part of a "constitutional coalition" government that includes all parties except the extremists of the KPD, DNVP, DVFP and NSDAP. [+ chancellor +] will remain as chancellor. Leftists in our party are skeptical of this arrangement.
 
 - @election_1928.ministries: Now, we must select our ministries.
 
