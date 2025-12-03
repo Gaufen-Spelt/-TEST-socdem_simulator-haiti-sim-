@@ -1,9 +1,0 @@
-title: 1928
-subtitle: A new year
-tags: event
-priority: 2
-view-if: year == 1928 and month >= 3
-max-visits: 1
-
-Brandenburg Bsw.
-
