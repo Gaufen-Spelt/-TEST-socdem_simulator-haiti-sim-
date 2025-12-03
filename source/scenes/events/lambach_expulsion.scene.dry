@@ -7,32 +7,40 @@ new-page: true
 
 = Lambach Article Consequences
 
-Sus
+Following the DNVP’s disastrous electoral performance, the party has been forced to confront the limits of its long-standing strategy of obstructing the Weimar political order. With its ability to influence national politics rapidly diminishing, internal factions have begun to demand a fundamental reassessment of the party’s identity and purpose.
+
+In this context, Lambach issued what has become known as the Lambach Article. In it, he argued that the restoration of the monarchy was no longer a realistic objective and sharply criticized the party’s entrenched anti-parliamentarian right wing. He urged the DNVP to accept participation in the parliamentary system and to seek influence within its institutions, presenting this course as a revival of the party’s traditional conservative heritage.
+
+The article provoked immediate outrage from Hugenberg and the radical-nationalist faction. Accusing Lambach of abandoning the DNVP’s core principles, Hugenberg mobilized his media network and factional allies, demanding Lambach’s removal and pressing Westarp to side with the hardliners.
+
+Conversely, Lambach gained support from Treviranus and the Young Conservatives, who envision a conservative-republican model for the DNVP. Their strategy centres on cooperation with the Center Party to anchor a stable right-leaning coalition and prevent the SPD from shaping national policy.
+
+Caught between the two camps, Westarp has not yet committed to either side, and pressure on his leadership continues to intensify.
 
 - @lumbach: Lambach
 - @westarp: Westarp
 - @hugenberg: Hugenberg
 
 @lumbach
-choose-if: pro_republic > 65
-subtitle: Sus
-unavailable-subtitle: Lambach is unable to oppose either of Westarp and Hugenberg on their decisions
-on-arrival: dnvp_party_leader = "Lambach"
+choose-if: pro_republic > 65 and spd_in_government = 0
+subtitle: Lambach is elected to the Leadership
+unavailable-subtitle: Lambach is unable to oppose either of Westarp and Hugenberg on their decisions.
+on-arrival: dnvp_party_leader = "Lambach"; dnvp_relation += 3
 
 Lambach sweeps away the remaining Conservatives, Monarchists and Nationalists within the party , as the Weimar's system punishes Hugenberg-a-like radicalism. Hugenberg has threatened to leave the party, being enraged by the election of "Republican". Westarp provides no comment.
 
 @westarp
 choose-if: pro_republic <= 65 and pro_republic >= 59
-subtitle: Sun
+subtitle: Westarp remains as the Leader
 unavailable-subtitle: Lambach and Hugenberg has decided on the consensus as neither is able to oust another, Westarp being willing to make some compromise.
 on-arrival: dnvp_party_leader = "Westarp"
 
 Lambach and Hugenberg are unable to force party into deposing one another, forcing Westarp to intervene in, as Westarp continues another term.
 
 @hugenberg
-choose-if: pro_republic < 59 and spd_in_government == 1
-subtitle: Dus
+choose-if: pro_republic < 59 and spd_in_government = 1
+subtitle: Hugenberg is elected to the Leadership
 unavailable-subtitle: Hugenberg does not hold enough power to oust either of Lambach or Westarp.
-on-arrival: dnvp_party_leader = "Hugenberg"
+on-arrival: dnvp_party_leader = "Hugenberg"; dnvp_relation -= -20
 
 Hugenberg, through his powerful media and nationalist-monarchist connections, removed Lambach and forces Westarp into the resignation.
