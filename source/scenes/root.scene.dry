@@ -53,7 +53,7 @@ Under Lambach, Young plan no longer collapses Right Coalition as Lambach opposes
 
 • Right wing coalition election no longer grants heavy debuffs and dissent, as range is only around 5 to 10 instead of 10 to 25. However, if right wing coalition secures more votes than grand or weimar, only right wing coalition is selectable.
 
-• Starting vote count changed to favor Z, however conditions for Weimar coalition are unchanged.
+• Starting vote count changed to favor Z, however conditions for Weimar coalition are unchanged. Rebalanced votes not for favor of Z as it counted towards Grand Coalition *too* .
 
 @start
 on-arrival: {!
@@ -277,49 +277,49 @@ Q.sapd_formed = 0;
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
-Q.workers_spd = 55;
+Q.workers_spd = 53;
 Q.workers_kpd = 18;
 Q.workers_z = 7;
-Q.workers_ddp = 0;
+Q.workers_ddp = 2;
 Q.workers_dvp = 0;
-Q.workers_dnvp = 5;
-Q.workers_nsdap = 0;
-Q.workers_dvfp = 5;
+Q.workers_dnvp = 6;
+Q.workers_nsdap = 1;
+Q.workers_dvfp = 3;
 Q.workers_other = 10;
 
 Q.old_middle_spd = 5;
 Q.old_middle_kpd = 0;
 Q.old_middle_z = 5;
 Q.old_middle_ddp= 10;
-Q.old_middle_dvp = 25;
-Q.old_middle_dnvp = 25;
+Q.old_middle_dvp = 24;
+Q.old_middle_dnvp = 26;
 Q.old_middle_nsdap = 9;
 Q.old_middle_dvfp = 1;
 Q.old_middle_other = 10;
 
 Q.new_middle_spd = 5;
 Q.new_middle_kpd = 1;
-Q.new_middle_z = 15;
-Q.new_middle_ddp= 25;
+Q.new_middle_z = 14;
+Q.new_middle_ddp= 26;
 Q.new_middle_dvp = 25;
-Q.new_middle_dnvp = 7;
+Q.new_middle_dnvp = 8;
 Q.new_middle_nsdap = 5;
-Q.new_middle_dvfp = 3;
+Q.new_middle_dvfp = 2;
 Q.new_middle_other = 11;
 
 Q.rural_spd = 10;
 Q.rural_kpd = 0;
-Q.rural_z = 5;
+Q.rural_z = 2;
 Q.rural_ddp= 5;
 Q.rural_dvp = 15;
-Q.rural_dnvp = 40;
+Q.rural_dnvp = 42;
 Q.rural_dvfp = 5;
 Q.rural_nsdap = 5;
 Q.rural_other = 10;
 
 Q.unemployed_spd = 25;
-Q.unemployed_kpd = 5;
-Q.unemployed_z = 2;
+Q.unemployed_kpd = 17;
+Q.unemployed_z = 0;
 Q.unemployed_ddp = 0;
 Q.unemployed_dvp = 0;
 Q.unemployed_dnvp = 5;
