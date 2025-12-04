@@ -146,6 +146,7 @@ Q.z_relation = 49;
 Q.kpd_relation = 27;
 Q.ddp_relation = 65;
 Q.dvp_relation = 32;
+Q.wp_relation = 25;
 // DNVP and NSDAP are invariably hostile
 Q.dnvp_relation = 10;
 Q.dvfp_relation = 0
@@ -159,7 +160,11 @@ Q.z_leader = "Brüning";
 Q.z_party_leader = "Marx";
 Q.nsdap_leader = "Hitler";
 Q.dnvp_leader = "Westarp";
-Q.dnvp_party_leader = "Hugenberg"
+Q.dnvp_party_leader = "Hugenberg";
+Q.wp_leader = "None";
+Q.wp_party_leader = "None";
+Q.dvfp_party_leader = "None";
+Q.dvfp_leader = "None"
 
 // hmm... maybe we can play nice with Hindenburg???
 Q.hindenburg_relation = 25;
@@ -272,10 +277,11 @@ Q.old_middle_qol = 100;
 Q.new_middle_qol = 100;
 
 Q.classes = ['workers', 'old_middle', 'new_middle', 'rural', 'unemployed', 'catholics'];
-Q.parties = ['spd', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other', 'dvfp'];
+Q.parties = ['spd', 'kpd', 'z', 'ddp', 'dvp', 'wp', 'dnvp', 'nsdap', 'other', 'dvfp'];
 
 // TODO: add 'sapd' later on
 Q.sapd_formed = 0;
+Q.kvp_formed = 0
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
@@ -284,6 +290,7 @@ Q.workers_kpd = 18;
 Q.workers_z = 7;
 Q.workers_ddp = 2;
 Q.workers_dvp = 0;
+Q.workers_wp = 0;
 Q.workers_dnvp = 6;
 Q.workers_nsdap = 1;
 Q.workers_dvfp = 3;
@@ -294,6 +301,7 @@ Q.old_middle_kpd = 0;
 Q.old_middle_z = 5;
 Q.old_middle_ddp= 10;
 Q.old_middle_dvp = 24;
+Q.old_middle_wp = 10;
 Q.old_middle_dnvp = 26;
 Q.old_middle_nsdap = 9;
 Q.old_middle_dvfp = 1;
@@ -304,6 +312,7 @@ Q.new_middle_kpd = 1;
 Q.new_middle_z = 14;
 Q.new_middle_ddp= 26;
 Q.new_middle_dvp = 25;
+Q.new_middle_wp = 5;
 Q.new_middle_dnvp = 8;
 Q.new_middle_nsdap = 5;
 Q.new_middle_dvfp = 2;
@@ -314,6 +323,7 @@ Q.rural_kpd = 0;
 Q.rural_z = 2;
 Q.rural_ddp= 4;
 Q.rural_dvp = 15;
+Q.rural_wp = 3
 Q.rural_dnvp = 46;
 Q.rural_dvfp = 4;
 Q.rural_nsdap = 4;
@@ -324,6 +334,7 @@ Q.unemployed_kpd = 17;
 Q.unemployed_z = 0;
 Q.unemployed_ddp = 0;
 Q.unemployed_dvp = 0;
+Q.unemployed_wp = 0;
 Q.unemployed_dnvp = 5;
 Q.unemployed_nsdap = 14;
 Q.unemployed_dvfp = 5;
@@ -334,6 +345,7 @@ Q.catholics_kpd = 2;
 Q.catholics_z = 52;
 Q.catholics_ddp = 0;
 Q.catholics_dvp = 5;
+Q.catholics_wp = 2;
 Q.catholics_dnvp = 5;
 Q.catholics_nsdap = 0;
 Q.catholics_dvfp = 0;
@@ -346,23 +358,25 @@ Q.catholics_other = 10;
 // note: the Z figures also include the BVP (Bavarian people's party)
 // since they were ideologically similar, but they were separate parties.
 // They did not have a CDU/CSU-style relationship.
-Q.spd_r = 26;
-Q.kpd_r = 9;
-Q.z_r = 17;
-Q.ddp_r = 6;
+Q.spd_r = 26; 
+Q.kpd_r = 9; 
+Q.z_r = 17; 
+Q.ddp_r = 6; 
 Q.dvp_r = 10;
-Q.dnvp_r = 19;
-Q.nsdap_r = 3;
+Q.wp_r = 6; 
+Q.dnvp_r = 17;
+Q.nsdap_r = 3; 
 Q.dvfp_r = 1;
-Q.other_r = 9;
+Q.other_r = 5;
 
 // diff from prev
 Q.old_spd_r = 26;
 Q.old_kpd_r = 9;
 Q.old_z_r = 17;
 Q.old_ddp_r = 6;
-Q.old_dvp_r = 10;
-Q.old_dnvp_r = 20;
+Q.old_dvp_r = 8;
+Q.old_wp_r = 4
+Q.old_dnvp_r = 18;
 Q.old_nsdap_r = 3;
 Q.old_dvfp_r = 0;
 Q.old_other_r = 9;
@@ -395,6 +409,7 @@ Q.dnvp_in_government = 1;
 Q.kpd_in_government = 0;
 Q.nsdap_in_government = 0;
 Q.dvfp_in_government = 0;
+Q.wp_in_government = 0;
 
 Q.in_right_coalition = 0;
 // Weimar coalition = SPD + Z + DDP
@@ -669,6 +684,7 @@ Q.center_dissent = 25;
 Q.z_relation = 41;
 Q.kpd_relation = 16;
 Q.dvp_relation = 31;
+Q.wp_relation = 25;
 Q.budget = 2;
 this.state.disableSaves = true;
 !}
