@@ -21,19 +21,33 @@ go-to: start_menu_2
 
 = Information about the Modification
 
-Basic vanilla plus modification, oriented specifically on the right wing coalition side of the content. Have fun!
+Basic vanilla plus modification, oriented specifically on the right wing coalition side of the content. 
+Have fun! Spoilers below, basically changes.
 
-1.xxprevious:
+
+
+
+
+
+
+
+
+
+
+
+
+
+1.0:
 
 Added Lambach Article, DVFP (German People's Freedom Party, Volkism), Right Wing Coalition content, Neorevisionists and some Non Fractional leaders are choosable for fourth advisor. 
 
-Mierendorff and Schumacher received big buffs. 
+• Mierendorff and Schumacher received big buffs. 
 
-Breistcheid received small buff.  
+• Breistcheid received small buff.  
 
-Foreign Policy received one month less cooldown. 
+• Foreign Policy received one month less cooldown. 
 
-Funding is now expanded with bigger downsides.
+• Funding is now expanded with bigger downsides.
 
 Etcetera.
 
@@ -56,6 +70,18 @@ Under Lambach, Young plan no longer collapses Right Coalition as Lambach opposes
 • Starting vote count changed to favor Z, however conditions for Weimar coalition are unchanged. Rebalanced votes not for favor of Z as it counted towards Grand Coalition *too* .
 
 • + Higher DNVP starter rural vote. 
+
+1.23:
+
+• Added Economical Party/WP/Party of the Middle Class Interests , Bourgeoise counterweight from "Others".
+
+• Hugenberg does not count as DNVP party leader at the beginning anymore.
+
+• Right wing coalition may form continuously as long as Hugenberg is not choosen as DNVP party leader.
+
+• Julius Leber grants passive action bonus to the military loyalty if advisor.
+
+
 
 @start
 on-arrival: {!
@@ -160,7 +186,7 @@ Q.z_leader = "Brüning";
 Q.z_party_leader = "Marx";
 Q.nsdap_leader = "Hitler";
 Q.dnvp_leader = "Westarp";
-Q.dnvp_party_leader = "Hugenberg";
+Q.dnvp_party_leader = "Westarp";
 Q.wp_leader = "None";
 Q.wp_party_leader = "None";
 Q.dvfp_party_leader = "None";
