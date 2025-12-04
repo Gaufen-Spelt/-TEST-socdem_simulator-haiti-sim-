@@ -561,7 +561,7 @@ However, the DNVP and its leader Hugenberg is refusing to partake in a coalition
 
 @right_coalition_sure
 subtitle: This will be extremely unpopular within our party.
-on-arrival: center_dissent += 20; left_dissent += 25; labor_dissent += 15; reformist_dissent += 10; neorevisionist_dissent += 10; z_relation -= 3; ddp_relation -= 6; dvp_relation -= 2; workers_dvfp += 3; workers_nsdap += 3; workers_kpd += 2
+on-arrival: center_dissent += 5; left_dissent += 10; labor_dissent += 5; reformist_dissent += 5; neorevisionist_dissent += 5; z_relation -= 1; ddp_relation -= 6; dvp_relation -= 2; workers_dvfp += 3; workers_nsdap += 3; workers_kpd += 2
 go-to: right_coalition_2
 
 
@@ -957,7 +957,7 @@ Rudolf Breitscheid has been appointed chancellor.
 
 @grand_coalition
 title: We can form a Grand Coalition.
-view-if: grand_coalition >= 50 and grand_coalition_failed == 0
+view-if: grand_coalition >= 50 and grand_coalition_failed == 0 and grand_coalition >= right_coalition
 subtitle: SPD + Z + BVP + [+ ddp_name +] + DVP ([+ grand_coalition +]%)
 on-arrival: in_grand_coalition = 1; in_popular_front = 0; in_left_front = 0
 go-to: grand_coalition_spd_lead if (n_elections <= 1 and largest_party == "SPD") or (largest_party == "SPD" and spd_r >= 30) or president = "Braun"; grand_coalition_z_lead if president != "Braun" and ((n_elections > 1 and spd_r < 30) or (n_elections <= 1 and largest_party != "SPD"))
