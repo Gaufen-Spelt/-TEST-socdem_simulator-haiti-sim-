@@ -1,0 +1,8 @@
+title: Union Coordination
+new-page: true
+is-card: true
+tags: party_affairs
+view-if: union_coordination_timer <= 0
+on-arrival: month_actions += 1; union_coordination_timer += 12;
+card-image: img/sangerbund.jpg
+#subtitle: Coordinating the ADGB for our political advantages
