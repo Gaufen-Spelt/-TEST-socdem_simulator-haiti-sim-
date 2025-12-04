@@ -12,23 +12,11 @@ card-image: img/sangerbund.jpg
 We may effectively control, rule and coordinate the ADGB and Labor Unions for our worth.
 
 - @union_meeting: Initiate the Labor Meeting
-- @protest_action: We may initiate protest act on one issue!
-- @union_fund: We may fund the unions!
-- @emergency_labor_fund
 - @easy_discard
 
 @union_meeting
 
-shall
+subtitle: Shall be avenged!
+on-arrival: labor_strength += 10; wtb_support += 1
 
-@protest_action
-
-we
-
-@union_fund
-
-serve
-
-@emergency_labor_fund
-
-not
+We shall initiate meeting!
