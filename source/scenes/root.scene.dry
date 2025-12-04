@@ -37,15 +37,23 @@ Funding is now expanded with bigger downsides.
 
 Etcetera.
 
+Under Lambach, Young plan no longer collapses Right Coalition as Lambach opposes Young Plan: Turning point for Hugenberg.
+
 1.21:
 
 • Judiciary can now be corrupted. 
+
+• Starting vote affects Weimar Coalition a bit. Don't disfavor DDP!!
 
 • Adjustments on Toleration - Right Coalition interactions: Relationship increase with right coalition is heavily less fruitful and austerity block is instantly blocked by DNVP presence.
 
 1.22:
 
 • Added post Lambach DNVP election. 
+
+• Right wing coalition election no longer grants heavy debuffs and dissent, as range is only around 5 to 10 instead of 10 to 25. However, if right wing coalition secures more votes than grand or weimar, only right wing coalition is selectable.
+
+• Starting vote count changed to favor Z, however conditions for Weimar coalition are unchanged.
 
 @start
 on-arrival: {!
@@ -80,7 +88,7 @@ Q.dissent_percent = 5;
 Q.factions = ['left', 'center', 'labor', 'reformist', 'neorevisionist'];
 // should this be normalized to 100%?
 Q.left_strength = 15;
-Q.left_dissent = 20;
+Q.left_dissent = 15;
 Q.center_strength = 30;
 Q.center_dissent = 0;
 Q.labor_strength = 25;
@@ -132,14 +140,14 @@ Q.moderate_plan_adopted = 0;
 // organizations
 
 // inter-party relations
-Q.z_relation = 50;
-Q.kpd_relation = 25;
-Q.ddp_relation = 60;
-Q.dvp_relation = 35;
+Q.z_relation = 49;
+Q.kpd_relation = 27;
+Q.ddp_relation = 65;
+Q.dvp_relation = 32;
 // DNVP and NSDAP are invariably hostile
 Q.dnvp_relation = 10;
-Q.dvfp_relation = 1
-Q.NSDAP_relation = 0;
+Q.dvfp_relation = 0
+Q.nsdap_relation = 0;
 
 Q.kpd_leader = "Thälmann";
 // alternative is the Conciliators as party leader
@@ -202,9 +210,9 @@ Q.reichswehr_loyalty = 0.2;
 // nationalism vs internationalism or pacifism or non-nationalism
 Q.nationalism = 60;
 // socialism vs capitalism
-Q.socialism = 40;
+Q.socialism = 37;
 // pro-republic vs anti-republic
-Q.pro_republic = 59;
+Q.pro_republic = 58;
 
 Q.emergency_rule = 0;
 
@@ -270,8 +278,8 @@ Q.sapd_formed = 0;
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
 Q.workers_spd = 55;
-Q.workers_kpd = 20;
-Q.workers_z = 5;
+Q.workers_kpd = 18;
+Q.workers_z = 7;
 Q.workers_ddp = 0;
 Q.workers_dvp = 0;
 Q.workers_dnvp = 5;
@@ -291,13 +299,13 @@ Q.old_middle_other = 10;
 
 Q.new_middle_spd = 5;
 Q.new_middle_kpd = 1;
-Q.new_middle_z = 10;
+Q.new_middle_z = 15;
 Q.new_middle_ddp= 25;
 Q.new_middle_dvp = 25;
-Q.new_middle_dnvp = 10;
+Q.new_middle_dnvp = 7;
 Q.new_middle_nsdap = 5;
 Q.new_middle_dvfp = 3;
-Q.new_middle_other = 13;
+Q.new_middle_other = 11;
 
 Q.rural_spd = 10;
 Q.rural_kpd = 0;
@@ -311,23 +319,23 @@ Q.rural_other = 10;
 
 Q.unemployed_spd = 25;
 Q.unemployed_kpd = 5;
-Q.unemployed_z = 1;
+Q.unemployed_z = 2;
 Q.unemployed_ddp = 0;
 Q.unemployed_dvp = 0;
 Q.unemployed_dnvp = 5;
-Q.unemployed_nsdap = 15;
+Q.unemployed_nsdap = 14;
 Q.unemployed_dvfp = 5;
 Q.unemployed_other = 9;
 
 Q.catholics_spd = 15;
 Q.catholics_kpd = 2;
-Q.catholics_z = 50;
+Q.catholics_z = 52;
 Q.catholics_ddp = 0;
 Q.catholics_dvp = 5;
 Q.catholics_dnvp = 5;
 Q.catholics_nsdap = 0;
 Q.catholics_dvfp = 0;
-Q.catholics_other = 12;
+Q.catholics_other = 10;
 
 
 // Current Reichstag composition
