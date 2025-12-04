@@ -45,7 +45,7 @@ Under Lambach, Young plan no longer collapses Right Coalition as Lambach opposes
 
 • Starting vote affects Weimar Coalition a bit. Don't disfavor DDP!!
 
-• Adjustments on Toleration - Right Coalition interactions: Relationship increase with right coalition is heavily less fruitful and austerity block is instantly blocked by DNVP presence.
+• Adjustments on Toleration - Right Coalition interactions: Relationship increase with right coalition is heavily less fruitful and anti austerity  is instantly blocked by DNVP's presence.
 
 1.22:
 
@@ -54,6 +54,8 @@ Under Lambach, Young plan no longer collapses Right Coalition as Lambach opposes
 • Right wing coalition election no longer grants heavy debuffs and dissent, as range is only around 5 to 10 instead of 10 to 25. However, if right wing coalition secures more votes than grand or weimar, only right wing coalition is selectable.
 
 • Starting vote count changed to favor Z, however conditions for Weimar coalition are unchanged. Rebalanced votes not for favor of Z as it counted towards Grand Coalition *too* .
+
+• + Higher DNVP starter rural vote. 
 
 @start
 on-arrival: {!
@@ -310,12 +312,12 @@ Q.new_middle_other = 11;
 Q.rural_spd = 10;
 Q.rural_kpd = 0;
 Q.rural_z = 2;
-Q.rural_ddp= 5;
+Q.rural_ddp= 4;
 Q.rural_dvp = 15;
-Q.rural_dnvp = 42;
-Q.rural_dvfp = 5;
-Q.rural_nsdap = 5;
-Q.rural_other = 10;
+Q.rural_dnvp = 46;
+Q.rural_dvfp = 4;
+Q.rural_nsdap = 4;
+Q.rural_other = 9;
 
 Q.unemployed_spd = 25;
 Q.unemployed_kpd = 17;
