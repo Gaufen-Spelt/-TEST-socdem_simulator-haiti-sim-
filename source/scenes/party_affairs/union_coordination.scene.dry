@@ -6,3 +6,21 @@ view-if: union_coordination_timer <= 0
 on-arrival: month_actions += 1; union_coordination_timer += 12;
 card-image: img/sangerbund.jpg
 #subtitle: Coordinating the ADGB for our political advantages
+
+= Union Coordination
+
+We may effectively control, rule and coordinate the ADGB and Labor Unions for our worth.
+
+- @union_meeting: Initiate the Labor Meeting
+- @protest_action: We may initiate protest act on one issue!
+- @union_fund: We may fund the unions!
+- @emergency_labor_fund
+- @easy_discard
+
+@union_meeting
+
+@protest_action
+
+@union_fund
+
+@emergency_labor_fund
