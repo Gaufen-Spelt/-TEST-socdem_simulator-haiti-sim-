@@ -573,6 +573,10 @@ table {
 .seat.dvfp {
     fill: ##43444F;
 }
+{
+.seat.wp {
+    fill: ##0094A1;
+}
 
 .tooltip-text {
     text-decoration: underline;
