@@ -25,10 +25,10 @@ The Judiciary is one of the most reactionary components of the government, along
 @corruption_reaction
 subtitle: +1 budget
 unavailable-subtitle: All our corrupt deals are done for now!
-choose-if: judicial_reforms > 0
-on-arrival: budget += 1; democratization -= 2; workers_spd -= 2*(1-dissent) if democratization <= 1; judicial_reform -= 1; pro_republic -= 4*(1-dissent); coalition_dissent -= 1 if historical_mode; reformist_dissent += 5; center_dissent += 5; labor_dissent += 5; left_dissent += 5; neorevisionist_dissent += 10
+choose-if: judicial_reform > 0
+on-arrival: budget += 1; democratization -= 2; workers_spd -= 2*(1-dissent) if democratization <= 1; judicial_reform -= 1; pro_republic -= 4*(1-dissent); coalition_dissent -= 1 if historical_mode; reformist_dissent += 5; center_dissent += 5; labor_dissent += 5; left_dissent += 5; neorevisionist_dissent += 10; ddp_relation -= 5
 
-We utilize the corrupted lawyers and jurists, ousting the democratic and fair justiciary members, bringing us more budget to work with, decreasing the size of justiciary.
+We utilize the corrupted lawyers and jurists, ousting the democratic and fair justiciary members, bringing us more budget to work with, decreasing the size of justiciary. DDP is most concerned! Everyone else doesn't pay so much attention.
 
 @reform
 subtitle: -1 budget
@@ -44,7 +44,7 @@ unavailable-subtitle: Not enough resources
 choose-if: resources >= 4
 on-arrival: resources -= 4; democratization += 1; coalition_dissent += 0 if in_grand_coalition == 1; workers_spd += 3*(1-dissent) if democratization >= 3; judicial_reform += 2; pro_republic += 4*(1-dissent); coup_progress += 1; coalition_dissent += 1 if historical_mode
 
-We bringed the resources to the justiciary for our democratic oriented judges, so they could remove the corrupted and old bureaucratic jurists and lawyers of the old regime, system and remnants.
+We bringed the resources to the justiciary for our democratic oriented judges, so they could remove the corrupted and old bureaucratic jurists and lawyers of the old regime, system and remnants. 
 
 @minor_reforms
 on-arrival: democratization += 1; workers_spd += 3*(1-dissent) if democratization >= 3; judicial_reform += 1; pro_republic += 3*(1-dissent); judiciary_timer += 6
