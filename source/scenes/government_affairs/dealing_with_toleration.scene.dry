@@ -93,6 +93,6 @@ We are now part of a "constitutional coalition" government that includes all par
 
 
 @stay_course
-on-arrival: z_relation += 2; dvp_relation += 1; left_dissent += 5; center_dissent += 3; dnvp_relation += 1 if right_wing_coalition = 1; dnvp_relation += 1 if dnvp_party_leader = "Lambach" or if dnvp_party_leader = "Martin"
+on-arrival: z_relation += 2; dvp_relation += 1; left_dissent += 5; center_dissent += 3; dnvp_relation += 1 if right_wing_coalition = 1; dnvp_relation += 1 if dnvp_party_leader = "Lambach"; dnvp_relation += 2 if dnvp_party_leader = "Martin" and land_reform = 0 and state_buyer = 0
 
 We will stay the course of toleration, for the sake of stability. Left and Center disapprove.
