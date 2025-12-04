@@ -22,7 +22,7 @@ Caught between the two camps, Westarp has not yet committed to either side, and 
 - @hugenberg: Hugenberg
 
 @lumbach
-choose-if: pro_republic > 65 and spd_in_government = 0
+choose-if: pro_republic > 64 and spd_in_government = 0
 subtitle: Lambach is elected to the Leadership
 unavailable-subtitle: Lambach is unable to oppose either of Westarp and Hugenberg on their decisions.
 on-arrival: dnvp_party_leader = "Lambach"; dnvp_relation += 3
@@ -30,7 +30,7 @@ on-arrival: dnvp_party_leader = "Lambach"; dnvp_relation += 3
 Lambach sweeps away the remaining Conservatives, Monarchists and Nationalists within the party , as the Weimar's system punishes Hugenberg-a-like radicalism. Hugenberg has threatened to leave the party, being enraged by the election of "Republican". Westarp provides no comment.
 
 @westarp
-choose-if: pro_republic <= 65 and pro_republic >= 59 and spd_in_government = 0
+choose-if: pro_republic <= 64 and pro_republic >= 59 and spd_in_government = 0
 subtitle: Westarp remains as the Leader
 unavailable-subtitle: Westarp may not secure the compromise as one side has already reached majority.
 on-arrival: dnvp_party_leader = "Westarp" ; dnvp_relationship -= 5
@@ -41,6 +41,6 @@ Lambach and Hugenberg are unable to force party into deposing one another, forci
 choose-if: pro_republic < 59 or spd_in_government = 1
 subtitle: Hugenberg is elected to the Leadership
 unavailable-subtitle: Hugenberg does not hold enough of power to oust either of Lambach or Westarp.
-on-arrival: dnvp_party_leader = "Hugenberg"; dnvp_relation -= -20
+on-arrival: dnvp_party_leader = "Hugenberg"; dnvp_relation -= -20; new_middle_dnvp -= 5; rural_dnvp -= 5; workers_dnvp -= 5
 
-Hugenberg, through his powerful media and nationalist-monarchist connections, removed Lambach and forces Westarp into the resignation.
+Hugenberg, through his powerful media and nationalist-monarchist connections, removed Lambach and forces Westarp into the resignation. Lambach, Treviranus and many more republican conservatives slowly leave the party, leaving it to the non civilian structures.
