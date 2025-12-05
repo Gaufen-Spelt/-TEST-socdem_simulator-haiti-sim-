@@ -228,11 +228,11 @@ go-to: rm_main
 
 Schumacher has been removed as an advisor. The Neorevisionist faction disapproves.
 
-@remove_bushwitz
+@remove_buchwitz
 title: Remove Bushwitz
-view-if: bushwitz_advisor = 1
+view-if: buchwitz_advisor = 1
 tags: remove_advisor
-on-arrival: bushwitz_advisor = 0; neorevisionist_dissent += 3; n_advisors -= 1
+on-arrival: buchwitz_advisor = 0; neorevisionist_dissent += 3; n_advisors -= 1
 go-to: rm_main
 
 Bushwitz has been removed as an advisor. The Neorevisionist faction disapproves.
@@ -593,14 +593,14 @@ tags: neorev_advisor
 Julius Leber is now an advisor.
 
 
-@add_bushwitz
+@add_buchwitz
 title: Otto Buchwitz
-subtitle: Otto Bushwitz is a Great War veteran and energetic speaker for the social-democratic cause, and favors reformist policies. {!<br><br>!}[? if difficulty < 0 : Actions - Emergency Fundraising, Building the Reichsbanner, Addressing the Economic Crisis ?]
+subtitle: Otto Buchwitz is a Great War veteran and energetic speaker for the social-democratic cause, and favors reformist policies. {!<br><br>!}[? if difficulty < 0 : Actions - Emergency Fundraising, Building the Reichsbanner, Addressing the Economic Crisis ?]
 is-card: true
 card-image: img/portraits/SchumacherKurt.jpg
 tags: neorev_advisor
-view-if: bushwitz_advisor = 0 and n_advisors < 4
-on-arrival: bushwitz_advisor = 1; n_advisors += 1; neorevisionist_strength += 5
+view-if: buchwitz_advisor = 0 and n_advisors < 4
+on-arrival: buchwitz_advisor = 1; n_advisors += 1; neorevisionist_strength += 5
 go-to: advisor_menu
 
 Otto Buchwitz is now an advisor.
