@@ -557,7 +557,6 @@ table {
 .seat.dvp {
     fill: #D5AC27;
 }
-{
 .seat.wp {
     fill: #00BBCC;
 }
@@ -573,7 +572,9 @@ table {
 .seat.sapd {
     fill: #C40000;
 }
-{
+.seat.kvp {
+    fill: #2EEEFF;
+}
 .seat.dvfp {
     fill: #43444F;
 }
