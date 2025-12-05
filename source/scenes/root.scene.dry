@@ -6,7 +6,8 @@ go-to: post_event if started = 1; start_menu if started = 0
 new-page: true
 go-to: start_menu_2
 
-= Social Democracy: An Alternate Horizon 1.21 Patch:
+= Social Democracy: An Alternate Horizon 1.24 Patch:
+
 = Intolerance to the Right Coalition feat. DNVP
 
 @start_menu_2
@@ -82,6 +83,10 @@ Under Lambach, Young plan no longer collapses Right Coalition as Lambach opposes
 • Julius Leber grants military reform/funding action bonus to the military loyalty if advisor.
 
 • All neorevisionists now have one less advisor timer cooldown except for one.
+
+1.24:
+
+• Added new neorevisionist Otto Buchwitz to the advisors.
 
 
 @start
@@ -666,6 +671,7 @@ Q.mierendorff_advisor = 0; // Carlo Mierendorf (post-1930)
 
 Q.leber_advisor = 0; // Julius Leber (post-1930)
 Q.schumacher_advisor = 0; // Kurt Schumacher (post-1930)
+q.bushwitz_advisor = 0; // Otto Buchwitz (post-1930)
 
 // Nonfactional advisors
 Q.hirschfeld_advisor = 0; // Magnus Hirschfeld
