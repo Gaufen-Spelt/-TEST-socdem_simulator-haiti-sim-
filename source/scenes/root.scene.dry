@@ -671,7 +671,7 @@ Q.mierendorff_advisor = 0; // Carlo Mierendorf (post-1930)
 
 Q.leber_advisor = 0; // Julius Leber (post-1930)
 Q.schumacher_advisor = 0; // Kurt Schumacher (post-1930)
-q.bushwitz_advisor = 0; // Otto Buchwitz (post-1930)
+q.buchwitz_advisor = 0; // Otto Buchwitz (post-1930)
 
 // Nonfactional advisors
 Q.hirschfeld_advisor = 0; // Magnus Hirschfeld
