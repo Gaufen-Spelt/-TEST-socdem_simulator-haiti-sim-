@@ -16,15 +16,17 @@ A Great War veteran and a neorevisionist leader, Kurt Schumacher argues for a st
 
 @enforcement_rb
 title: Reichsbanner Mobilization
-subtitle: Strenghten the Reichsbanner through Otto's mobilization
+subtitle: Strenghten the Reichsbanner through Otto's mobilization, although leading to some misunderstanding between us and bourgeoisie parties.
 choose-if: advisor_action_timer = 1 and iron_front_formed = 1
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if iron_front_formed = 0: Iron Front is not formed in order for us to mobilize Reichsbanner! ?]
 on-arrival: advisor_action_timer = 6 / ( rb_strength / 150) ; rb_militancy += 0.05; rb_strength += 100; z_relation -= 3; dvp_relation -= 3; sh_militancy += 0.01; ss_militancy += 0.01; nsdap_workers -= 1; dnvp_workers -= 1; reichsbanner_timer -= 2
-#view-if: reichsbanner_mobilization > 0.1
+#view-if: rb_militancy > 0.2
+
+At the response of our mobilization, SS and SA mobilizes their units instead.
 
 @build_reichsbanner
 title: Reichsbanner
-subtitle: Schumacher supports providing more resources to the Reichsbanner.
+subtitle: Buchwitz supports providing more resources to the Reichsbanner.
 choose-if: advisor_action_timer <= 1
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
 on-arrival: advisor_action_timer = 5; reichsbanner_timer -= 6; last_advisor_action = 1; spd_workers += 1
@@ -32,6 +34,6 @@ go-to: reichsbanner
 
 @opposition_rb
 title: Attack other paramilitaries through the Reichsbanner
-subtitle: Shall we prosper!
+subtitle: Buchwitz leads his avant-garde to attack other paramilitaries, causing high radicalism amongst the society. Might worth it.
 choose-if: advisor_action_timer <= 1
-on-arrival: advisor_action_timer = 5; sh_strength -= 10; ss_strength -= 10; rb_strength -= 15
+on-arrival: advisor_action_timer = 5; sh_strength -= 10; ss_strength -= 10; rb_strength -= 15; nationalism += 5; dnvp_relation -= 5; nsdap_relation -= 10; 
