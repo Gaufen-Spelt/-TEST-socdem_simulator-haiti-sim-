@@ -557,6 +557,10 @@ table {
 .seat.dvp {
     fill: #D5AC27;
 }
+{
+.seat.wp {
+    fill: #00EAFF;
+}
 .seat.other {
     fill: #909090;
 }
@@ -571,11 +575,7 @@ table {
 }
 {
 .seat.dvfp {
-    fill: ##43444F;
-}
-{
-.seat.wp {
-    fill: ##0094A1;
+    fill: #43444F;
 }
 
 .tooltip-text {
