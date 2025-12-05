@@ -1,0 +1,43 @@
+title: Otto Buchwitz
+is-pinned-card: true
+tags: advisor, neorevisionist
+card-image: img/portraits/SchumacherKurt.jpg
+view-if: bushwitz_advisor = 1
+new-page: true 
+
+= Otto Bushwitz
+
+A Great War veteran and a neorevisionist leader, Kurt Schumacher argues for a strong resistance against the Nazis. As tireless anti-fascist, Schumacher may appeal to the workers through indirect abilities but fierce resonance to the youth. Either his actions or his impatience speed up his effectiveness.
+
+- @emergency_fundraising
+- @build_reichsbanner
+- @moderate_economic_plan
+- @root: Return to main
+
+@emergency_fundraising
+title: Emergency Fundraising
+subtitle: An emergency infusion of resources.
+choose-if: advisor_action_timer = 1
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: advisor_action_timer = 5; resources += dues
+#view-if: difficulty < 1
+
+# Schumacher's emergency fundraising is available on all difficulties.
+
+We have gained +[+ dues +] resources.
+
+@build_reichsbanner
+title: Reichsbanner
+subtitle: Schumacher supports providing more resources to the Reichsbanner.
+choose-if: advisor_action_timer <= 1
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: advisor_action_timer = 5; reichsbanner_timer -= 6; last_advisor_action = 1; spd_workers += 1
+go-to: reichsbanner
+
+@moderate_economic_plan
+title: Support the reformist economic plan
+subtitle: Call for a limited program of job creation without deficit spending.
+choose-if: advisor_action_timer <= 1 and moderate_plan_adopted = 0 and black_thursday_seen = 1
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if moderate_economic_plan = 0 : We have already adopted the reformist economic plan. ?] [? if black_thursday_seen == 0 : We are not currently in an economic crisis. ?]
+on-arrival: advisor_action_timer = 5; spd_workers +=2
+go-to: crisis_program.support_moderate
