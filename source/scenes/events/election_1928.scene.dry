@@ -301,7 +301,7 @@ go-to: coalition_menu
 
 {!<tr><td><div class="box" style='background-color:#D5AC27'> </div> !} DVP: {!</td><td>!} [+ dvp_r +]% {!</td><td>!} [+ str_change_dvp +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#00EAFF'> </div> !} WP: {!</td><td>!} [+ wp_r +]% {!</td><td>!} [+ str_change_wp +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#00BBCC'> </div> !} WP: {!</td><td>!} [+ wp_r +]% {!</td><td>!} [+ str_change_wp +] {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#a0a0a0'> </div> !} Others: {!</td><td>!} [+ other_r +] % {!</td><td>!} [+ str_change_other +] {!</td></tr>!}
 
@@ -309,7 +309,7 @@ go-to: coalition_menu
 
 {!<tr><td><div class="box" style='background-color:#954B00'> </div> !} NSDAP: {!</td><td>!} [+ nsdap_r +]% {!</td><td>!} [+ str_change_nsdap +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#43444F'> </div> !} DVFP: {!</td><td>!} [+ dvfp_r +]% {!</td><td>!} [+ str_change_dvfp +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:##43444F'> </div> !} DVFP: {!</td><td>!} [+ dvfp_r +]% {!</td><td>!} [+ str_change_dvfp +] {!</td></tr>!}
 
 {!</table>!}
 
